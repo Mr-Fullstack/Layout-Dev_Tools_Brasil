@@ -1,5 +1,24 @@
 @charset "utf-8";
 
+@keyframes SlideDown{
+
+  0%{
+    display: none;
+    height: 0px;
+    padding: 0rem;
+    opacity: 0;
+    transition: all 1s;
+  }
+
+  100%{
+    display: flex;
+    padding: 2rem;
+    height: auto;
+    opacity: 1;
+    transition: all 1s;
+  }
+}
+
 @-webkit-keyframes particulasFundo{
     0%{
     background-position:  50000px;

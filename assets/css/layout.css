@@ -11,14 +11,55 @@
     background-color: #616ca7;
     color:#fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
     width: 100%;
     justify-self: flex-end;
     position: fixed;
     z-index: 9;
+    text-transform: uppercase;
   }
+nav i{
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 9;
+}
+form{
+  z-index: 9;
+  position: absolute;
+  top:70px;
+  background-color: #616ca7;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height:auto;
+  padding: 2rem;
+  opacity: 1;
+  transition: all 1s;
+  font-weight: bold;
+ 
+
+}
+form input{
+  border:none;
+  height: 35px;
+  width: 100%;
+  margin-bottom: 2px;
+  font-size: 25px;
+  font-weight: bold;
+}
+form input[type=search]{
+  padding-left:10px;
+}
+
+form input[type=submit]{
+  margin-top: 2px;
+  color: #3F51B5;
+  background-color: #fff;
+}
 
 
   button.open,button.close{
@@ -35,7 +76,7 @@
     align-self: flex-start;
     cursor: pointer;
     position: absolute;
-    z-index: 10;
+    z-index: 8;
     outline: none;
     transition-delay: all .1s;
   }
@@ -49,7 +90,7 @@
     border-bottom:2px solid #fff;
     margin-top: 8px;
     cursor: pointer;
-    border-radius: 100%;
+ 
   }
   button.open::after{
     content: "";
@@ -60,23 +101,21 @@
     border-bottom:2px solid #fff;
     margin-top: 6.5px;
     cursor: pointer;
-    border-radius: 100%;
   }
   button.open{
     display: flex;
     opacity: 1;
-    left: 0px;
-    transition: all .1s;
+    left: 5px;
+    transition: all .5s;
     cursor: pointer;
-    border-radius: 100%;
+   
   }
   button.close{
     top: 2rem;
     display: flex;
     left: 5px;
-    transition: all .1s;
+    transition: all .5s;
     cursor: pointer;
-    border-radius: 100%;
     transform: rotate(-45deg);
   }
   
@@ -88,9 +127,8 @@
     border-top:2px solid #fff;
     border-bottom:2px solid #fff;
     cursor: pointer;
-    margin-bottom:-2rem; 
-    transform: rotate(85deg);
-    border-radius: 100%;
+    transform: rotate(-90deg);
+  
   }
   
   menu{
@@ -103,33 +141,41 @@
   width: 0%;
   z-index: 8;
   left: 0;
-  background-color: #3f51b5ba;
   list-style-type: none;
-  transition: all .1s;
+  transition: all .5s;
 }
 
 
 menu ul{
-  list-style-type: none; 
-  transition: all .1s;
+  list-style-type: none;
+  transition: all .5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  width: 100%;
+  margin-top: 71px;
 }
+
 menu ul li {
   background-color: #fff;
-  width: 80px;
-  min-width: 40px;
+  /* min-width: 40px; */
   height: 70px;
-  min-height: 35px;
-  border-radius: 100%;
+  /* border-radius: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
-  color:#4D7AFF;
-  margin-top:10%; 
-  box-shadow: 0rem .4rem .3rem #2D1083;
+  color: #3F51B5;
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
+  z-index: 9;
+  border-bottom: 1px solid #e6e6e6;
+ 
 }
+
+
+
 
 /* estilo principal */
   .tela{
@@ -199,7 +245,20 @@ menu ul li {
     margin-top:10px;
     text-shadow: 0rem 0.1rem 0.2rem rgb(187, 204, 221);
   }
-  
+
+  #open,#close{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+   
+  }
+  #open{
+    top:20px;
+    left: 5px;
+  }
+
   .autor-post{
     width: 45px;
     height: 45px;
@@ -210,7 +269,7 @@ menu ul li {
   .box-post a{
     position: absolute;
     right: 60%;
-    z-index: 9;
+    z-index: 8;
     top: 55%;
     font-size:18px;
     font-weight: bold;
@@ -234,6 +293,7 @@ menu ul li {
 .lancamento-post::-webkit-scrollbar {
   display: none;
 }
+
 
 .card-box::after{
 content: "";
