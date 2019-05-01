@@ -19,6 +19,7 @@
     position: fixed;
     z-index: 9;
     text-transform: uppercase;
+    box-shadow: 0rem 1rem .9rem rgb(161, 164, 170);
   }
 nav i{
   font-size: 25px;
@@ -28,8 +29,8 @@ nav i{
 form{
   z-index: 9;
   position: absolute;
-  top:70px;
-  background-color: #616ca7;
+  top:60px;
+  background-color: #454abd;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -50,6 +51,7 @@ form input{
   margin-bottom: 2px;
   font-size: 25px;
   font-weight: bold;
+  display: none;
 }
 form input[type=search]{
   padding-left:10px;
@@ -188,10 +190,10 @@ menu ul li {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows:auto;
-    background-color: rgb(205, 212, 218);
+    background-color: rgb(249, 249, 249);
     background-image: url(../images/particulas-fundo-2-min.png);
     background-size:cover;
-    background-blend-mode:screen;
+    background-blend-mode:multiply;
     justify-self: flex-end;
     height: 100%;
     min-height:920px;
@@ -216,7 +218,7 @@ menu ul li {
     width:300px;
     margin: 20px;
     height: 215px;
-    box-shadow: 0px .1rem .9rem rgba(187, 204, 221, 0.4);
+    box-shadow: 0px 0.1rem 0.9rem rgba(145, 154, 162, 0.4);
     position:relative;
     border-radius: 25px;
 
@@ -350,7 +352,7 @@ border-radius: 0px 25px 25px 0px;
   grid-template-rows: auto;
   grid-template-areas: "post-left post-right";
   align-items: center;
-  height: 350px;
+  height: 362px;
   width: 100%;
   overflow: hidden;
   overflow-y: scroll;
@@ -400,20 +402,22 @@ border-radius: 0px 25px 25px 0px;
 }
 
 .nav_info{
- padding-left: 100px;
+ padding-left: 30px;
  align-self: center;
  position: absolute;
- left: 10px;
+ left: 0px;
  top:25px;
 }
 .arrows_keys i{
- 
    border-radius: 100%; 
    padding: .1rem;
    cursor: pointer; 
-   z-index: 7;
+   z-index: 8;
    margin-left: 10px;
    transition: all .2s;
+   box-shadow: 0px 0.1rem 0.9rem rgba(0, 0, 0, 0.205);
+   text-shadow: 0px .5px .2px #000;
+   background-color: rgba(145, 154, 162, 0.4);
 }
 .arrows_keys i:hover{
   background-color: rgba(63, 81, 181, 0.527);

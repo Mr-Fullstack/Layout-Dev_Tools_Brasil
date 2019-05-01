@@ -69,5 +69,40 @@
     
     }
 
+    .date{
+      display: none;
+    }
+
+    nav{
+      justify-content: center;
+    }
+    #search{
+      margin-right: -50px;
+      margin-left: 30px;
+    }
+    
+    nav h1{
+      font-size: 1rem;
+    }
+    .lancamento-post{
+      padding: 0;
+    }
+    .arrows_keys{
+      font-size: 2rem;
+      position: relative;
+    }
+
+    .nav_info{
+      padding-left: 20px;
+      position: relative;
+      padding-bottom: 10px;
+     }
+
+    }
+    .navigation {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
  }
 
