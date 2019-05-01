@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var search = document.getElementById('search'); 
   var form_search= document.getElementById('form-search'); 
   var windowWidth = window.innerWidth;
-  var tela = document.getElementById('width'); 
   var open_search = false;
   var button_input = document.getElementById('button_input'); 
   var search_input = document.getElementById('search_input'); 
@@ -155,12 +154,9 @@ form_search.style.display = 'none';
 
 }, false);
 
-function tela(tela ){
-  var windowWidth = window.innerWidth;
-  var tela = document.getElementById('width'); 
-  tela.innerHTML = windowWidth;
-}
+/*
 tela();
 window.addEventListener('resize', function(){
 tela();
 });
+*/
